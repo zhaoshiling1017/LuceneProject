@@ -165,7 +165,7 @@ public class IndexManager{
         try{
             FileInputStream fis = new FileInputStream(file);   
             StringBuilder sb = new StringBuilder();   
-            jxl.Workbook rwb = Workbook.getWorkbook(fis);   
+            Workbook rwb = Workbook.getWorkbook(fis);   
             Sheet[] sheet = rwb.getSheets();   
             for (int i = 0; i < sheet.length; i++) {   
                 Sheet rs = rwb.getSheet(i);   
